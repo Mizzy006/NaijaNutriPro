@@ -3,20 +3,27 @@ import json
 import base64
 from dotenv import load_dotenv  
 from groq import Groq
+import streamlit as st
 
 
 class NumpyEncoder(json.JSONEncoder):
     """ Custom encoder for numpy data types """
     def default(self, obj):
-        if hasattr(obj, 'item'): # This safely catches numpy int64, float64, etc.
+        if hasattr(obj, 'item'): 
             return obj.item()
         return super().default(obj)
 
-# Load the environment variables from the .env file
+# Load the environment variables from the local .env file 
 load_dotenv() 
 
-# Initialize the Groq client
-client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
+# 2. Dynamic key retrieval: Check Streamlit Secrets first, fallback to local os.environ
+api_key = st.secrets.get("GROQ_API_KEY") or os.environ.get("GROQ_API_KEY")
+
+if not api_key:
+    raise ValueError("GROQ_API_KEY could not be found. Check your local .env or Streamlit Cloud Secrets.")
+
+# Initialize the Groq client with the resolved key
+client = Groq(api_key=api_key)
 
 # Defining Models (Using Groq's Free Tier Models)
 TEXT_MODEL = "llama-3.3-70b-versatile"
