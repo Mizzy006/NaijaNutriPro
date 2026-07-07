@@ -7,7 +7,7 @@ from utils import create_pdf
 import json
 
 # PAGE CONFIGURATION 
-st.set_page_config(page_title="NaijaNutri AI", page_icon="🇳🇬", layout="centered")
+st.set_page_config(page_title="DietPal AI", page_icon="🇳🇬", layout="centered")
 
 #  INITIALIZE SESSION STATE 
 if "plan_data" not in st.session_state:
@@ -55,7 +55,7 @@ st.markdown("""
     """, unsafe_allow_html=True)
 
 #  HEADER SECTION 
-st.title("🇳🇬 NaijaNutri: Context-Aware Dietitian")
+st.title("DietPal: Context-Aware Dietitian")
 st.write("Intelligent Meal Planning using **Constraint Optimization**, **Multimodal AI**, & **RAG**.")
 st.divider()
 
