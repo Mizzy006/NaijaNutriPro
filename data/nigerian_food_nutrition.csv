@@ -1,0 +1,121 @@
+Food_ID,Name,Serving_Size,Calories_kcal,Protein_g,Carbs_g,Fat_g,Fiber_g,Iron_mg,Calcium_mg,Vitamin_A_mcg,Vitamin_C_mg,Sodium_mg,Price_Avg_Naira,Category,Tags,Health_Tags,Pair_Category
+1,Pounded Yam (Iyan),1 Wrap (300g),360,4.0,80.0,1.0,2,1.2,30,0,5,15,800,Swallow,heavy;gluten-free;lunch,,needs-soup
+2,Eba (Garri),1 Wrap (300g),296,2.0,69.0,0.3,4,1.5,40,0,0,10,500,Swallow,filling;cheap;lunch,,needs-soup
+3,Amala (Yam Flour),1 Wrap (300g),315,3.5,70.0,0.8,5,1.8,35,0,3,12,600,Swallow,light;lunch,diabetic-friendly,needs-soup
+4,Fufu (Akpu),1 Wrap (300g),330,2.0,75.0,0.5,3,0.8,20,0,0,8,500,Swallow,filling;heavy;lunch,,needs-soup
+5,Semo (Semovita),1 Wrap (300g),360,10.0,72.0,1.5,3,1.0,25,0,0,5,700,Swallow,easy-digest;dinner,,needs-soup
+6,Tuwo Shinkafa,1 Wrap (300g),290,5.0,65.0,1.0,2,0.6,15,0,0,6,600,Swallow,gluten-free;northern;dinner,,needs-soup
+7,Wheat Meal,1 Wrap (300g),300,11.0,65.0,2.0,8,2.5,30,0,0,4,800,Swallow,high-fiber;weight-loss,heart-healthy,needs-soup
+8,Lafun,1 Wrap (300g),340,2.0,78.0,0.4,3,1.0,28,0,2,10,550,Swallow,fermented;yoruba;lunch,,needs-soup
+9,Jollof Rice,1 Plate (350g),665,14.0,112.0,18.0,4,2.8,45,120,8,680,1200,Rice,party;spicy;high-carb,,rice-main
+10,Fried Rice,1 Plate (350g),700,16.0,118.0,18.0,5,2.2,40,180,6,720,1300,Rice,party;oily;mixed-veggies,,rice-main
+11,White Rice & Stew,1 Plate (350g),451,12.0,76.0,11.0,2,1.5,30,90,5,450,1000,Rice,basic;cheap,,rice-main
+12,Concoction Rice,1 Plate (350g),600,15.0,110.0,10.0,6,3.0,50,150,10,380,800,Rice,student-meal;cheap;palm-oil,,rice-main
+13,Ofada Rice & Sauce,1 Plate (300g),700,18.0,115.0,20.0,5,3.5,55,200,4,520,1500,Rice,spicy;premium;fiber,heart-healthy,rice-main
+14,Coconut Rice,1 Plate (350g),670,10.0,101.0,25.0,3,1.8,35,5,3,320,1100,Rice,sweet;festive,,rice-main
+15,Native Rice (Local),1 Plate (300g),620,14.0,112.0,8.0,6,3.2,48,10,2,280,700,Rice,organic;fiber;cheap,heart-healthy,rice-main
+16,Yam Pottage (Asaro),1 Plate (300g),500,8.0,90.0,12.0,6,2.0,40,180,12,350,900,Tuber,soft;lunch;sweet,,standalone
+17,Boiled Yam & Egg,3 Slices + Sauce,450,14.0,60.0,15.0,4,2.5,50,120,8,280,1000,Tuber,breakfast;protein,,standalone
+18,Fried Yam (Dundun),3 Slices (200g),550,4.0,85.0,22.0,3,1.2,25,0,4,180,800,Tuber,oily;street-food,,standalone
+19,Yam & Palmoil Sauce,3 Slices + Sauce,480,6.0,72.0,18.0,4,2.8,35,350,6,300,850,Tuber,traditional;yoruba,,standalone
+20,Beans (Ewa Aganyin),1 Portion (250g),400,22.0,55.0,18.0,12,4.5,80,50,3,480,700,Beans,high-protein;spicy;breakfast,heart-healthy;diabetic-friendly,standalone
+21,Beans Porridge,1 Portion (300g),350,20.0,50.0,10.0,10,4.0,75,120,5,350,600,Beans,high-protein;lunch,heart-healthy;diabetic-friendly,standalone
+22,Ewa Ibeji (Beans & Corn),1 Portion (250g),380,18.0,58.0,8.0,9,3.8,70,80,4,320,650,Beans,balanced;yoruba;breakfast,heart-healthy,standalone
+23,Gbegiri Soup,1 Bowl (200g),280,16.0,30.0,12.0,6,3.2,65,40,2,380,500,Soup,beans-soup;yoruba,diabetic-friendly,needs-swallow
+24,Moi-Moi (Plain),1 Wrap (150g),220,12.0,25.0,8.0,4,3.0,60,30,2,280,400,Light Main,weight-loss;protein;snack,diabetic-friendly,light-standalone
+25,Moi-Moi (Egg/Fish),1 Wrap (180g),280,18.0,25.0,12.0,4,3.5,70,60,2,320,600,Light Main,high-protein;rich,,light-standalone
+26,Ekuru (White Moi-Moi),1 Wrap (150g),180,10.0,22.0,5.0,3,2.8,55,10,1,200,350,Light Main,light;yoruba;weight-loss,diabetic-friendly;ulcer-friendly,light-standalone
+27,Akara,4 Balls (150g),320,14.0,30.0,16.0,5,3.0,55,20,2,250,500,Side,oily;breakfast;vegan,,breakfast-side
+28,Egusi Soup,1 Bowl (200g),450,18.0,8.0,38.0,3,4.0,120,280,8,520,1000,Soup,keto;high-fat,,needs-swallow
+29,Efo Riro (Vegetable Soup),1 Bowl (200g),250,15.0,6.0,18.0,4,5.5,180,650,35,480,1200,Soup,healthy;keto;vitamins,heart-healthy;pregnancy-safe,needs-swallow
+30,Ogbono Soup,1 Bowl (200g),300,10.0,12.0,25.0,4,2.5,50,100,5,420,1000,Soup,draw-soup;keto,,needs-swallow
+31,Okra Soup,1 Bowl (200g),150,8.0,10.0,8.0,6,2.0,90,60,12,350,800,Soup,low-cal;weight-loss,diabetic-friendly;ulcer-friendly,needs-swallow
+32,Ewedu (Plain),1 Bowl (150g),37,3.0,5.0,0.5,4,2.2,120,180,15,80,400,Soup,low-cal;add-on;yoruba,diabetic-friendly;ulcer-friendly;pregnancy-safe,needs-swallow
+33,Banga Soup,1 Bowl (200g),500,12.0,10.0,45.0,3,3.0,40,350,10,380,1500,Soup,high-fat;delta-style,,needs-swallow
+34,Bitter Leaf Soup,1 Bowl (200g),300,15.0,8.0,20.0,6,4.2,100,150,18,400,1000,Soup,healthy;bitter,heart-healthy;diabetic-friendly,needs-swallow
+35,Edikang Ikong,1 Bowl (200g),380,25.0,12.0,28.0,7,6.0,200,450,40,520,1800,Soup,premium;high-protein,pregnancy-safe,needs-swallow
+36,Peppersoup (Fish),1 Bowl (300g),200,30.0,5.0,6.0,2,2.0,45,30,5,680,1500,Soup,spicy;light;keto,ulcer-friendly,peppersoup
+37,Peppersoup (Goat),1 Bowl (300g),250,28.0,6.0,12.0,1,3.5,35,20,4,700,1800,Soup,spicy;premium;keto,,peppersoup
+38,Ila Asepo (Mixed Okra),1 Bowl (200g),200,10.0,12.0,12.0,5,3.0,85,200,15,380,900,Soup,yoruba;traditional,diabetic-friendly,needs-swallow
+39,Abula (Ewedu+Gbegiri+Stew),1 Bowl (250g),350,18.0,20.0,22.0,6,4.5,150,250,18,550,800,Soup,yoruba;signature;combo,,needs-swallow
+40,Suya (Beef),1 Stick (100g),280,25.0,5.0,18.0,1,3.0,15,5,0,850,1000,Meat,spicy;high-protein;night,,snack
+41,Kilishi,1 Portion (80g),240,30.0,8.0,10.0,1,3.5,20,10,0,900,800,Meat,dried;northern;high-protein,,snack
+42,Asun (Spicy Goat),1 Portion (150g),320,28.0,3.0,22.0,0,3.8,25,15,2,750,1500,Meat,spicy;premium;yoruba,,snack
+43,Fried Plantain (Dodo),1 Portion (150g),439,2.5,72.0,14.0,4,1.2,8,120,18,60,500,Side,sweet;oily;vegan,,side
+44,Boiled Plantain,1 Portion (150g),250,3.0,60.0,1.0,4,1.0,5,100,15,30,400,Side,healthy;iron-rich,diabetic-friendly,side
+45,Roasted Plantain (Boli),1 Portion (150g),290,3.0,65.0,5.0,4,1.1,6,110,16,40,500,Side,street-food;healthy;yoruba,diabetic-friendly,side
+46,Plantain Chips,1 Portion (100g),400,2.0,55.0,20.0,3,0.8,5,80,8,20,350,Snack,crispy;snack,,snack
+47,Puff Puff,4 Balls,450,6.0,65.0,18.0,2,1.5,20,0,0,180,300,Snack,oily;sugar;street-food,,snack
+48,Meat Pie,1 Piece,400,12.0,45.0,20.0,2,2.0,25,30,1,420,500,Snack,filling;baked,,snack
+49,Egg Roll,1 Piece,350,10.0,40.0,16.0,2,1.8,30,40,0,380,400,Snack,filling;protein;oily,,snack
+50,Gala (Sausage Roll),1 Piece,250,6.0,30.0,12.0,1,1.0,15,10,0,450,200,Snack,processed;emergency,,snack
+51,Chin Chin,1 Portion (100g),420,5.0,50.0,22.0,1,1.2,18,15,0,200,250,Snack,sugar;crunchy;festive,,snack
+52,Bread,1/2 Loaf,600,14.0,110.0,8.0,4,3.0,50,0,0,580,600,Carb,high-carb;filling,,breakfast-base
+53,Indomie (2 Packs),1 Plate,760,16.0,104.0,30.0,4,2.5,30,0,0,1200,800,Noodle,processed;sodium;student,,standalone
+54,Indomie + Egg,1 Plate,840,22.0,104.0,35.0,4,3.5,60,80,0,1250,1000,Noodle,processed;student,,standalone
+55,Spaghetti Jollof,1 Plate (300g),650,14.0,95.0,22.0,3,2.0,35,100,6,580,900,Pasta,student-meal;lunch,,rice-main
+56,Macaroni & Stew,1 Plate (300g),620,12.0,90.0,20.0,3,1.8,30,80,4,520,800,Pasta,cheap;student,,rice-main
+57,Pap (Ogi/Akamu),1 Bowl,150,2.0,35.0,1.0,1,0.5,15,0,0,30,300,Breakfast,light;sick-food,ulcer-friendly,breakfast-base
+58,Custard,1 Bowl,200,0.5,45.0,2.0,0,0.3,10,0,0,60,400,Breakfast,processed;sugar,,breakfast-base
+59,Cornflakes & Milk,1 Bowl,280,8.0,45.0,6.0,2,4.0,120,100,0,250,500,Breakfast,quick;processed,,standalone
+60,Oatmeal (Plain),1 Bowl (250g),220,8.0,38.0,4.0,5,2.5,40,0,0,5,400,Breakfast,high-fiber;healthy,heart-healthy;diabetic-friendly;ulcer-friendly,standalone
+61,Oatmeal & Banana,1 Bowl (300g),300,9.0,55.0,5.0,6,2.8,45,15,9,8,500,Breakfast,balanced;fruit,heart-healthy;diabetic-friendly,standalone
+62,Boiled Egg,1 Large,78,6.0,0.5,5.0,0,0.9,28,80,0,62,50,Protein,keto;quick;versatile,diabetic-friendly;ulcer-friendly,protein
+63,Fried Egg,1 Large,92,6.0,0.5,7.0,0,0.9,28,90,0,170,100,Protein,quick;oily,,protein
+64,Scrambled Eggs,2 Eggs,180,13.0,2.0,13.0,0,1.8,56,160,0,340,200,Protein,protein;breakfast,diabetic-friendly,protein
+65,Egg Sauce (Ata Dindin),1 Portion (150g),220,12.0,8.0,16.0,2,2.5,50,200,12,380,300,Protein,yoruba;breakfast;versatile,,protein
+66,Vegetable Omelette,1 Large,150,10.0,4.0,11.0,1,1.5,45,180,8,320,200,Protein,balanced;healthy,diabetic-friendly;ulcer-friendly,protein
+67,Fried Fish (Titus),1 Piece,250,22.0,0.0,18.0,0,1.5,30,25,0,320,800,Protein,healthy;omega3,heart-healthy,protein
+68,Grilled Fish (Tilapia),1 Piece,180,26.0,0.0,8.0,0,1.2,35,20,0,280,900,Protein,lean;healthy,heart-healthy;diabetic-friendly,protein
+69,Stockfish (Okporoko),1 Piece,120,25.0,0.0,2.0,0,2.0,40,15,0,580,600,Protein,dried;flavor,,condiment
+70,Crayfish (Ground),2 Tbsp,40,8.0,1.0,0.5,0,1.5,80,10,0,350,150,Protein,condiment;flavor;calcium,pregnancy-safe,condiment
+71,Assorted Meat,1 Piece,150,18.0,0.0,8.0,0,2.5,12,0,0,420,500,Protein,high-cholesterol,,protein
+72,Ponmo (Cow Skin),1 Piece,49,10.0,1.5,0.2,0,0.5,8,0,0,180,200,Protein,low-cal;filler,,condiment
+73,Chicken (Fried),1 Piece,350,25.0,5.0,25.0,0,1.5,15,25,0,480,1200,Protein,oily;standard,,protein
+74,Chicken (Grilled/Peppered),1 Piece,280,30.0,3.0,16.0,0,1.5,18,20,2,520,1100,Protein,lean;spicy,heart-healthy,protein
+75,Goat Meat,1 Piece,180,22.0,0.0,10.0,0,3.0,15,0,0,350,700,Protein,lean;flavor,,protein
+76,Turkey,1 Piece,200,24.0,0.0,11.0,0,2.0,20,0,0,400,1000,Protein,lean;festive,,protein
+77,Snail (Igbin),1 Portion (100g),90,16.0,2.0,1.0,0,3.5,80,30,0,70,800,Protein,lean;traditional,heart-healthy;diabetic-friendly,protein
+78,Ugwu (Fluted Pumpkin) Leaf,1 Portion (100g),35,4.0,4.0,0.5,3,5.0,150,450,40,15,100,Vegetable,leafy;iron-rich;yoruba,pregnancy-safe;heart-healthy,condiment
+79,Efo Tete (African Spinach),1 Portion (100g),30,3.0,4.0,0.4,3,4.5,140,380,35,12,80,Vegetable,leafy;iron-rich;yoruba,pregnancy-safe;heart-healthy,condiment
+80,Efo Shoko (Lagos Spinach),1 Portion (100g),28,3.0,3.0,0.3,3,4.0,130,350,30,10,80,Vegetable,leafy;yoruba,pregnancy-safe;heart-healthy,condiment
+81,Efo Worowo (Bitter Leaf),1 Portion (100g),32,3.0,5.0,0.5,4,3.5,100,200,25,8,60,Vegetable,bitter;medicinal,diabetic-friendly;heart-healthy,condiment
+82,Garden Egg (African Eggplant),3 Pieces,25,1.0,5.0,0.2,3,0.5,15,10,3,5,50,Vegetable,low-cal;crunchy,diabetic-friendly;ulcer-friendly,condiment
+83,Tomato Stew (Base),1 Portion (100g),120,2.0,8.0,9.0,2,1.0,20,100,15,280,200,Soup,base;versatile;yoruba,,condiment
+84,Garden Egg Sauce,1 Portion (150g),160,4.0,12.0,11.0,3,1.5,30,80,10,250,350,Side,yoruba;traditional,diabetic-friendly,side
+85,Pepper Sauce (Ata Rodo),2 Tbsp,30,0.5,5.0,1.0,1,0.5,8,50,40,120,50,Spice,hot;condiment;yoruba,,condiment
+86,Zobo Drink,1 Bottle (50cl),120,1.0,28.0,0.0,0,2.0,30,10,8,30,300,Drink,sugary;local,,drink
+87,Kunu Drink,1 Bottle (50cl),180,4.0,35.0,2.0,2,1.5,25,5,3,40,300,Drink,grain-based;milky,,drink
+88,Coke/Fanta,1 Bottle (50cl),210,0.0,55.0,0.0,0,0.0,5,0,0,45,350,Drink,sugar;processed,,drink
+89,Water,1 Bottle (75cl),0,0.0,0.0,0.0,0,0.0,0,0,0,0,150,Drink,hydration,ulcer-friendly,drink
+90,Chapman,1 Glass (400ml),250,0.0,60.0,0.0,0,0.5,10,20,15,50,500,Drink,sweet;festive,,drink
+91,Tiger Nut Drink (Kunun Aya),1 Bottle (50cl),280,5.0,40.0,12.0,4,2.0,35,15,5,35,400,Drink,natural;milky;sweet,,drink
+92,Agidi (Eko),1 Wrap (200g),180,3.0,40.0,0.5,2,0.8,20,0,0,8,200,Light Main,light;yoruba;breakfast,ulcer-friendly,light-standalone
+93,Tuwo Masara (Corn),1 Wrap (300g),320,6.0,68.0,2.0,4,1.5,25,30,0,10,500,Swallow,northern;corn-based,,needs-soup
+94,Ikokore (Water Yam Pottage),1 Plate (300g),420,12.0,65.0,14.0,5,2.5,45,120,8,380,1000,Tuber,ijebu;yoruba;premium,,standalone
+95,Abacha (African Salad),1 Portion (250g),350,8.0,45.0,16.0,4,2.0,35,100,6,520,800,Side,igbo;fermented;cold,,standalone
+96,Masa (Rice Cake),3 Pieces,300,6.0,50.0,8.0,2,1.2,20,10,0,150,400,Snack,northern;fried,,snack
+97,Waina (Rice Cake),2 Pieces,220,5.0,42.0,4.0,2,1.0,18,8,0,120,350,Snack,northern;steamed,diabetic-friendly,snack
+98,Ojojo (Water Yam Fritters),4 Pieces,350,6.0,45.0,16.0,3,1.8,30,20,4,250,500,Snack,yoruba;fried;traditional,,snack
+99,Adalu (Beans & Corn),1 Plate (300g),400,20.0,58.0,10.0,10,4.2,75,90,5,340,700,Beans,balanced;filling;yoruba,heart-healthy;diabetic-friendly,standalone
+100,Ogi & Akara Combo,1 Bowl + 4 Balls,470,16.0,65.0,17.0,6,3.5,70,20,2,280,800,Breakfast,traditional;yoruba;combo,,standalone
+101,Bread & Egg,1/4 Loaf + 2 Eggs,480,20.0,60.0,18.0,2,3.2,80,160,0,650,500,Breakfast,quick;protein;cheap,,standalone
+102,Bread & Beans,1/4 Loaf + Beans,550,24.0,85.0,12.0,8,4.5,90,50,3,580,600,Breakfast,filling;protein;cheap,heart-healthy,standalone
+103,Dundun & Egg Sauce,3 Slices + Sauce,620,12.0,88.0,26.0,4,3.0,55,200,12,380,900,Breakfast,yoruba;filling;traditional,,standalone
+104,Roasted Corn & Coconut,1 Cob + Coconut,280,5.0,45.0,10.0,5,1.5,15,8,3,20,300,Snack,street-food;natural;vegan,diabetic-friendly,snack
+105,Guguru & Epa (Popcorn & Groundnut),1 Portion,350,10.0,35.0,20.0,4,2.0,30,15,0,10,250,Snack,street-food;yoruba;cinema,,snack
+106,Tea & Bread,1 Cup + 2 Slices,350,8.0,55.0,10.0,2,2.0,60,20,0,400,400,Breakfast,breakfast;quick;cheap;morning,,standalone
+107,Fried Plantain & Egg (Dodo & Egg),1 Portion + 2 Eggs,520,14.0,72.0,20.0,4,2.5,45,180,18,250,700,Breakfast,breakfast;yoruba;filling;sweet,,standalone
+108,Moi-Moi & Pap Combo,1 Wrap + 1 Bowl,370,14.0,60.0,9.0,5,3.5,75,30,2,310,700,Breakfast,breakfast;traditional;protein;combo,diabetic-friendly,standalone
+109,Yam Pepper Soup,1 Bowl (300g),350,8.0,65.0,6.0,4,2.0,40,50,10,450,800,Tuber,breakfast;lunch;light;sick-food,ulcer-friendly,standalone
+110,Pancakes,3 Pieces,400,8.0,55.0,16.0,1,2.0,80,50,0,350,600,Breakfast,breakfast;sweet;modern;quick,,standalone
+111,Oha Soup,1 Bowl (200g),320,16.0,10.0,24.0,5,4.0,110,300,20,450,1200,Soup,igbo;traditional;premium;lunch;dinner,pregnancy-safe,needs-swallow
+112,Nsala Soup (White Soup),1 Bowl (200g),280,20.0,8.0,18.0,3,3.0,50,40,6,480,1400,Soup,igbo;premium;light;dinner,,needs-swallow
+113,Afang Soup,1 Bowl (200g),350,20.0,10.0,25.0,6,5.0,160,400,30,500,1600,Soup,cross-river;premium;healthy;dinner,pregnancy-safe,needs-swallow
+114,Miyan Kuka (Baobab Soup),1 Bowl (200g),200,12.0,15.0,10.0,8,3.5,200,100,25,350,800,Soup,northern;traditional;healthy;lunch;dinner,diabetic-friendly,needs-swallow
+115,Miyan Taushe (Pumpkin Soup),1 Bowl (200g),250,10.0,20.0,15.0,4,2.5,60,500,15,380,900,Soup,northern;pumpkin;vitamins;lunch;dinner,diabetic-friendly;pregnancy-safe,needs-swallow
+116,Dan Wake (Bean Dumplings),1 Plate (250g),380,16.0,55.0,10.0,8,3.5,65,50,4,300,500,Beans,northern;filling;cheap;lunch,diabetic-friendly;heart-healthy,standalone
+117,White Rice & Beans,1 Plate (350g),550,20.0,90.0,10.0,8,3.5,70,40,3,350,800,Rice,balanced;cheap;filling;lunch;dinner,heart-healthy;diabetic-friendly,standalone
+118,Pepper Rice,1 Plate (350g),580,12.0,100.0,14.0,3,2.0,35,80,6,400,900,Rice,spicy;local;cheap;lunch;dinner,,rice-main
+119,Coleslaw,1 Portion (100g),150,1.0,10.0,12.0,2,0.5,30,40,15,200,300,Side,fresh;healthy;party;lunch;dinner,,side
+120,Fura da Nono,1 Bottle (50cl),320,10.0,48.0,10.0,3,1.5,150,30,4,80,500,Drink,northern;probiotic;milky,heart-healthy,drink
