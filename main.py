@@ -17,6 +17,7 @@ from llm_agent import (
     process_multimodal_query, validate_llm_plan
 )
 from utils import create_pdf
+import streamlit.components.v1 as components
 
 
 # ============================================================
@@ -47,6 +48,8 @@ if "vision_history" not in st.session_state:
     ]
 if "rag_ready" not in st.session_state:
     st.session_state.rag_ready = False
+if "just_generated" not in st.session_state:
+    st.session_state.just_generated = False
 
 
 # ============================================================
@@ -582,6 +585,30 @@ with main_tab:
             st.session_state.chat_history = [
                 {"role": "assistant", "content": "Plan generated. You can ask me to swap meals, adjust macros, or explain my choices."}
             ]
+
+            # Flag to auto-close sidebar on mobile after generation
+            st.session_state.just_generated = True
+
+    # Auto-close sidebar on mobile after plan generation
+    if st.session_state.just_generated:
+        components.html("""
+            <script>
+                (function() {
+                    var mq = window.parent.matchMedia('(max-width: 768px)');
+                    if (mq.matches) {
+                        var btn = window.parent.document.querySelector(
+                            '[data-testid="stSidebarCollapseButton"] button'
+                        );
+                        if (btn) {
+                            btn.style.display = 'block';
+                            btn.click();
+                            btn.style.display = '';
+                        }
+                    }
+                })();
+            </script>
+        """, height=0)
+        st.session_state.just_generated = False
 
     # Only display if a plan has been generated and saved in memory
     if st.session_state.plan_data is not None:
