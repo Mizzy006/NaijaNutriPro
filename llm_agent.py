@@ -289,8 +289,9 @@ def explain_meal_plan(user_profile, plan_data, day, style="Standard"):
             ],
             temperature=0.8,
             max_tokens=500,
+            reasoning_format="parsed",
         )
-        return response.choices[0].message.content
+        return _strip_think_tags(response.choices[0].message.content)
     except Exception as e:
         return f"Omo, network glitch happen o. (API Error: {str(e)})"
 
@@ -357,8 +358,9 @@ def process_chat_query(user_prompt, plan_data, chat_history, style="Standard"):
             temperature=0.3,  # Low temp so the JSON is strictly formatted
             response_format={"type": "json_object"},  # Force Groq to return pure JSON
             max_tokens=2000,
+            reasoning_format="parsed",
         )
-        return response.choices[0].message.content
+        return _strip_think_tags(response.choices[0].message.content)
     except Exception as e:
         # Fallback empty JSON if it fails
         return json.dumps({"message": f"API Error: {str(e)}", "updated_plan": plan_data}, cls=NumpyEncoder)
@@ -498,8 +500,9 @@ def process_multimodal_query(user_prompt, image_file, budget, metrics, chat_hist
                 messages=messages,
                 temperature=0.5,
                 max_tokens=1024,
+                reasoning_format="parsed",
             )
-            return response.choices[0].message.content
+            return _strip_think_tags(response.choices[0].message.content)
 
         else:
             # =============================================
@@ -568,8 +571,9 @@ def process_multimodal_query(user_prompt, image_file, budget, metrics, chat_hist
                 messages=messages,
                 temperature=0.5,
                 max_tokens=1024,
+                reasoning_format="parsed",
             )
-            return response.choices[0].message.content
+            return _strip_think_tags(response.choices[0].message.content)
 
     except Exception as e:
         return f"Oops! I couldn't process that request. (Error: {str(e)})"
