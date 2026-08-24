@@ -284,12 +284,11 @@ def explain_meal_plan(user_profile, plan_data, day, style="Standard"):
         response = get_client().chat.completions.create(
             model=TEXT_MODEL,
             messages=[
-                {"role": "system", "content": "You are NaijaNutri — a friendly, experienced Nigerian dietician who personally created this meal plan. You speak naturally and helpfully, like a real person. You MADE this plan, so talk about it with confidence — say 'I chose', 'I included', 'I picked' rather than 'your meal plan has'. Never use filler phrases like 'it seems' or 'it's worth noting'. Never criticize or second-guess the plan unless the user asks for changes."},
+                {"role": "system", "content": "/no_think You are NaijaNutri — a friendly, experienced Nigerian dietician who personally created this meal plan. You speak naturally and helpfully, like a real person. You MADE this plan, so talk about it with confidence — say 'I chose', 'I included', 'I picked' rather than 'your meal plan has'. Never use filler phrases like 'it seems' or 'it's worth noting'. Never criticize or second-guess the plan unless the user asks for changes."},
                 {"role": "user", "content": prompt}
             ],
             temperature=0.8,
             max_tokens=500,
-            reasoning_format="parsed",
         )
         return _strip_think_tags(response.choices[0].message.content)
     except Exception as e:
@@ -340,7 +339,7 @@ def process_chat_query(user_prompt, plan_data, chat_history, style="Standard"):
     IMPORTANT: Only use foods from our Nigerian food database. Do not invent foods.
     """
 
-    messages = [{"role": "system", "content": system_prompt}]
+    messages = [{"role": "system", "content": "/no_think " + system_prompt}]
 
     # Sending the text messages as history, not huge JSON blocks
     for msg in chat_history[1:]:
@@ -358,7 +357,6 @@ def process_chat_query(user_prompt, plan_data, chat_history, style="Standard"):
             temperature=0.3,  # Low temp so the JSON is strictly formatted
             response_format={"type": "json_object"},  # Force Groq to return pure JSON
             max_tokens=2000,
-            reasoning_format="parsed",
         )
         return _strip_think_tags(response.choices[0].message.content)
     except Exception as e:
@@ -487,7 +485,7 @@ def process_multimodal_query(user_prompt, image_file, budget, metrics, chat_hist
             """
 
             messages = [
-                {"role": "system", "content": "You are NaijaNutri — a friendly, expert Nigerian Chef and Dietitian. Give practical, structured meal recommendations."},
+                {"role": "system", "content": "/no_think You are NaijaNutri — a friendly, expert Nigerian Chef and Dietitian. Give practical, structured meal recommendations."},
             ]
             # Add recent chat context
             for msg in chat_history[-4:]:
@@ -500,7 +498,6 @@ def process_multimodal_query(user_prompt, image_file, budget, metrics, chat_hist
                 messages=messages,
                 temperature=0.5,
                 max_tokens=1024,
-                reasoning_format="parsed",
             )
             return _strip_think_tags(response.choices[0].message.content)
 
@@ -559,7 +556,7 @@ def process_multimodal_query(user_prompt, image_file, budget, metrics, chat_hist
             """
 
             messages = [
-                {"role": "system", "content": "You are NaijaNutri — a friendly, expert Nigerian Chef and Dietitian. Give practical, structured meal recommendations."},
+                {"role": "system", "content": "/no_think You are NaijaNutri — a friendly, expert Nigerian Chef and Dietitian. Give practical, structured meal recommendations."},
             ]
             for msg in chat_history[-4:]:
                 if msg["role"] in ["user", "assistant"] and isinstance(msg["content"], str):
@@ -571,7 +568,6 @@ def process_multimodal_query(user_prompt, image_file, budget, metrics, chat_hist
                 messages=messages,
                 temperature=0.5,
                 max_tokens=1024,
-                reasoning_format="parsed",
             )
             return _strip_think_tags(response.choices[0].message.content)
 
