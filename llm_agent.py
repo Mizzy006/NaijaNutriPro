@@ -76,7 +76,7 @@ class NumpyEncoder(json.JSONEncoder):
 
 
 # Defining Models (Using Groq's Free Tier Models)
-TEXT_MODEL = "llama-3.3-70b-versatile"
+TEXT_MODEL = "qwen/qwen3.6-27b"
 VISION_MODEL = "qwen/qwen3.6-27b"
 
 # Data path for validation

@@ -1,0 +1,606 @@
+{
+  "evaluation_date": "2026-08-10T15:42:49.649286",
+  "methodology": "Top-3 ChromaDB retrieval, keyword-based relevance judgment",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "n_results": 3,
+  "num_questions": 15,
+  "total_chunks_judged": 45,
+  "total_relevant": 44,
+  "overall_relevance_pct": 97.8,
+  "questions_with_majority_relevant": 15,
+  "questions_with_any_relevant": 15,
+  "per_source_breakdown": {
+    "health_conditions": {
+      "relevant": 27,
+      "total": 27,
+      "pct": 100.0
+    },
+    "micronutrient_guide": {
+      "relevant": 8,
+      "total": 9,
+      "pct": 88.9
+    },
+    "nigerian_dietary_guidelines": {
+      "relevant": 6,
+      "total": 6,
+      "pct": 100.0
+    },
+    "food_pairings_and_culture": {
+      "relevant": 3,
+      "total": 3,
+      "pct": 100.0
+    }
+  },
+  "per_question_results": [
+    {
+      "id": "Q01",
+      "question": "What Nigerian foods should a diabetic person avoid?",
+      "topic": "Diabetes — foods to avoid",
+      "expected_source": "health_conditions",
+      "relevant_count": 3,
+      "total_chunks": 3,
+      "relevance_pct": 100.0,
+      "chunks": [
+        {
+          "rank": 1,
+          "source": "health_conditions",
+          "section": "health_conditions",
+          "distance_score": 0.3915,
+          "relevant": true,
+          "source_match": true,
+          "snippet": "protein) — Beans Porridge, Moi-Moi, Ekuru - **Fruits**: Garden Egg (very low sugar), unripe plantain  ### Nigerian Foods to AVOID or LIMIT for Diabeti..."
+        },
+        {
+          "rank": 2,
+          "source": "health_conditions",
+          "section": "health_conditions",
+          "distance_score": 0.4146,
+          "relevant": true,
+          "source_match": true,
+          "snippet": "dance**: Minimize added sugars, sugary drinks (Coke, Fanta, sweetened Zobo), and sugar-heavy snacks.  ### Nigerian Foods GOOD for Diabetics - **Swallo..."
+        },
+        {
+          "rank": 3,
+          "source": "health_conditions",
+          "section": "Health Conditions and Nigerian Dietary Management",
+          "distance_score": 0.7013,
+          "relevant": true,
+          "source_match": true,
+          "snippet": "# Health Conditions and Nigerian Dietary Management  ## Diabetes (Type 2)  ### Overview Nigeria has one of the highest diabetes burdens in Africa, wit..."
+        }
+      ]
+    },
+    {
+      "id": "Q02",
+      "question": "Which swallows have a low glycemic index for managing blood sugar?",
+      "topic": "Diabetes — low GI swallows",
+      "expected_source": "health_conditions",
+      "relevant_count": 3,
+      "total_chunks": 3,
+      "relevance_pct": 100.0,
+      "chunks": [
+        {
+          "rank": 1,
+          "source": "health_conditions",
+          "section": "health_conditions",
+          "distance_score": 0.933,
+          "relevant": true,
+          "source_match": true,
+          "snippet": "protein) — Beans Porridge, Moi-Moi, Ekuru - **Fruits**: Garden Egg (very low sugar), unripe plantain  ### Nigerian Foods to AVOID or LIMIT for Diabeti..."
+        },
+        {
+          "rank": 2,
+          "source": "health_conditions",
+          "section": "health_conditions",
+          "distance_score": 1.0095,
+          "relevant": true,
+          "source_match": true,
+          "snippet": "ugh diet, primarily by controlling carbohydrate intake and choosing foods with a low glycemic index.  ### Dietary Guidelines for Diabetics - **Carbohy..."
+        },
+        {
+          "rank": 3,
+          "source": "health_conditions",
+          "section": "health_conditions",
+          "distance_score": 1.0991,
+          "relevant": true,
+          "source_match": true,
+          "snippet": "dance**: Minimize added sugars, sugary drinks (Coke, Fanta, sweetened Zobo), and sugar-heavy snacks.  ### Nigerian Foods GOOD for Diabetics - **Swallo..."
+        }
+      ]
+    },
+    {
+      "id": "Q03",
+      "question": "How much carbohydrate per day is recommended for a diabetic?",
+      "topic": "Diabetes — carb limits",
+      "expected_source": "health_conditions",
+      "relevant_count": 3,
+      "total_chunks": 3,
+      "relevance_pct": 100.0,
+      "chunks": [
+        {
+          "rank": 1,
+          "source": "health_conditions",
+          "section": "Hypertension (High Blood Pressure)",
+          "distance_score": 0.8147,
+          "relevant": true,
+          "source_match": true,
+          "snippet": "m, Fried Plantain (frying increases GI) - **Sugary Drinks**: Limit fruit juices, sweetened beverages  ### Recommended Daily Limits for Diabetics - Sod..."
+        },
+        {
+          "rank": 2,
+          "source": "health_conditions",
+          "section": "health_conditions",
+          "distance_score": 0.839,
+          "relevant": true,
+          "source_match": true,
+          "snippet": "ugh diet, primarily by controlling carbohydrate intake and choosing foods with a low glycemic index.  ### Dietary Guidelines for Diabetics - **Carbohy..."
+        },
+        {
+          "rank": 3,
+          "source": "health_conditions",
+          "section": "health_conditions",
+          "distance_score": 1.0278,
+          "relevant": true,
+          "source_match": true,
+          "snippet": "dance**: Minimize added sugars, sugary drinks (Coke, Fanta, sweetened Zobo), and sugar-heavy snacks.  ### Nigerian Foods GOOD for Diabetics - **Swallo..."
+        }
+      ]
+    },
+    {
+      "id": "Q04",
+      "question": "What foods should I eat to lower my blood pressure?",
+      "topic": "Hypertension — beneficial foods",
+      "expected_source": "health_conditions",
+      "relevant_count": 3,
+      "total_chunks": 3,
+      "relevance_pct": 100.0,
+      "chunks": [
+        {
+          "rank": 1,
+          "source": "health_conditions",
+          "section": "health_conditions",
+          "distance_score": 0.719,
+          "relevant": true,
+          "source_match": true,
+          "snippet": "for 5+ servings of vegetables daily. - **Limit Alcohol**: Moderate or eliminate alcohol consumption.  ### Nigerian Foods GOOD for Hypertension - **Veg..."
+        },
+        {
+          "rank": 2,
+          "source": "health_conditions",
+          "section": "health_conditions",
+          "distance_score": 0.8239,
+          "relevant": true,
+          "source_match": true,
+          "snippet": "ller\" because many Nigerians are undiagnosed. Diet plays a critical role in managing blood pressure.  ### Dietary Guidelines for Hypertension (DASH-st..."
+        },
+        {
+          "rank": 3,
+          "source": "health_conditions",
+          "section": "health_conditions",
+          "distance_score": 0.8921,
+          "relevant": true,
+          "source_match": true,
+          "snippet": "er sodium if prepared without much salt) - **Soups**: Efo Riro, Okra Soup (minimize seasoning cubes)  ### Nigerian Foods to AVOID or LIMIT for Hyperte..."
+        }
+      ]
+    },
+    {
+      "id": "Q05",
+      "question": "Why are seasoning cubes bad for someone with high blood pressure?",
+      "topic": "Hypertension — seasoning cubes & sodium",
+      "expected_source": "health_conditions",
+      "relevant_count": 3,
+      "total_chunks": 3,
+      "relevance_pct": 100.0,
+      "chunks": [
+        {
+          "rank": 1,
+          "source": "health_conditions",
+          "section": "health_conditions",
+          "distance_score": 1.0809,
+          "relevant": true,
+          "source_match": true,
+          "snippet": "ller\" because many Nigerians are undiagnosed. Diet plays a critical role in managing blood pressure.  ### Dietary Guidelines for Hypertension (DASH-st..."
+        },
+        {
+          "rank": 2,
+          "source": "health_conditions",
+          "section": "health_conditions",
+          "distance_score": 1.09,
+          "relevant": true,
+          "source_match": true,
+          "snippet": "er sodium if prepared without much salt) - **Soups**: Efo Riro, Okra Soup (minimize seasoning cubes)  ### Nigerian Foods to AVOID or LIMIT for Hyperte..."
+        },
+        {
+          "rank": 3,
+          "source": "health_conditions",
+          "section": "health_conditions",
+          "distance_score": 1.1197,
+          "relevant": true,
+          "source_match": true,
+          "snippet": "for 5+ servings of vegetables daily. - **Limit Alcohol**: Moderate or eliminate alcohol consumption.  ### Nigerian Foods GOOD for Hypertension - **Veg..."
+        }
+      ]
+    },
+    {
+      "id": "Q06",
+      "question": "What Nigerian foods are rich in folic acid for pregnant women?",
+      "topic": "Pregnancy — folic acid sources",
+      "expected_source": "health_conditions",
+      "relevant_count": 3,
+      "total_chunks": 3,
+      "relevance_pct": 100.0,
+      "chunks": [
+        {
+          "rank": 1,
+          "source": "health_conditions",
+          "section": "health_conditions",
+          "distance_score": 0.5813,
+          "relevant": true,
+          "source_match": true,
+          "snippet": "evelopment) - **Vitamin A**: Important but do NOT exceed 3,000mcg/day (excess is toxic to the fetus)  ### Nigerian Foods EXCELLENT for Pregnancy - **L..."
+        },
+        {
+          "rank": 2,
+          "source": "health_conditions",
+          "section": "health_conditions",
+          "distance_score": 0.6458,
+          "relevant": true,
+          "source_match": true,
+          "snippet": "common in pregnancy) - **Fruits**: Oranges (Vitamin C + folic acid), bananas (potassium), watermelon  ### Nigerian Foods to AVOID During Pregnancy - *..."
+        },
+        {
+          "rank": 3,
+          "source": "nigerian_dietary_guidelines",
+          "section": "nigerian_dietary_guidelines",
+          "distance_score": 0.7288,
+          "relevant": true,
+          "source_match": false,
+          "snippet": "iron. Consuming these with Vitamin C-rich foods like tomatoes and peppers enhances iron absorption.  ### Vitamin A Deficiency Vitamin A deficiency is ..."
+        }
+      ]
+    },
+    {
+      "id": "Q07",
+      "question": "How many extra calories does a pregnant woman need daily?",
+      "topic": "Pregnancy — calorie requirements",
+      "expected_source": "health_conditions",
+      "relevant_count": 3,
+      "total_chunks": 3,
+      "relevance_pct": 100.0,
+      "chunks": [
+        {
+          "rank": 1,
+          "source": "health_conditions",
+          "section": "health_conditions",
+          "distance_score": 0.7786,
+          "relevant": true,
+          "source_match": true,
+          "snippet": "Ministry of Health recommends an additional 300-500 kcal/day during the second and third trimesters.  ### Dietary Guidelines for Pregnancy - **Calorie..."
+        },
+        {
+          "rank": 2,
+          "source": "health_conditions",
+          "section": "Pregnancy",
+          "distance_score": 0.7838,
+          "relevant": true,
+          "source_match": true,
+          "snippet": "g/day (moderate) - Saturated Fat: below 13g/day - Potassium: at least 3,500mg/day  ---  ## Pregnancy  ### Overview Proper nutrition during pregnancy i..."
+        },
+        {
+          "rank": 3,
+          "source": "health_conditions",
+          "section": "Peptic Ulcer",
+          "distance_score": 1.1226,
+          "relevant": true,
+          "source_match": true,
+          "snippet": "peppersoup may stimulate contractions - **Unpasteurized Dairy**: Rare in Nigeria but still a concern  ### Recommended Daily Targets During Pregnancy -..."
+        }
+      ]
+    },
+    {
+      "id": "Q08",
+      "question": "What foods are safe to eat if I have a stomach ulcer?",
+      "topic": "Peptic ulcer — safe foods",
+      "expected_source": "health_conditions",
+      "relevant_count": 3,
+      "total_chunks": 3,
+      "relevance_pct": 100.0,
+      "chunks": [
+        {
+          "rank": 1,
+          "source": "health_conditions",
+          "section": "health_conditions",
+          "distance_score": 0.7056,
+          "relevant": true,
+          "source_match": true,
+          "snippet": ". While diet alone does not cure ulcers, it can significantly affect symptom management and healing.  ### Dietary Guidelines for Ulcer Patients - **Ea..."
+        },
+        {
+          "rank": 2,
+          "source": "health_conditions",
+          "section": "health_conditions",
+          "distance_score": 0.7882,
+          "relevant": true,
+          "source_match": true,
+          "snippet": "Alkaline, helps neutralize stomach acid - **Bread (without butter/margarine)**: Absorbs excess acid  ### Nigerian Foods to AVOID with Ulcers - **Spicy..."
+        },
+        {
+          "rank": 3,
+          "source": "health_conditions",
+          "section": "health_conditions",
+          "distance_score": 0.8116,
+          "relevant": true,
+          "source_match": true,
+          "snippet": "id concentration. - **Probiotics**: Fermented foods may help fight H. pylori and support gut health.  ### Nigerian Foods GOOD for Ulcer Patients - **O..."
+        }
+      ]
+    },
+    {
+      "id": "Q09",
+      "question": "Should someone with ulcers avoid spicy suya?",
+      "topic": "Peptic ulcer — spicy food avoidance",
+      "expected_source": "health_conditions",
+      "relevant_count": 3,
+      "total_chunks": 3,
+      "relevance_pct": 100.0,
+      "chunks": [
+        {
+          "rank": 1,
+          "source": "health_conditions",
+          "section": "health_conditions",
+          "distance_score": 0.878,
+          "relevant": true,
+          "source_match": true,
+          "snippet": ". While diet alone does not cure ulcers, it can significantly affect symptom management and healing.  ### Dietary Guidelines for Ulcer Patients - **Ea..."
+        },
+        {
+          "rank": 2,
+          "source": "health_conditions",
+          "section": "health_conditions",
+          "distance_score": 0.9308,
+          "relevant": true,
+          "source_match": true,
+          "snippet": "ea**: Caffeine stimulates acid production - **Chin Chin/Puff Puff**: Fried, sugary — double irritant  ### Recommended Dietary Pattern for Ulcer Patien..."
+        },
+        {
+          "rank": 3,
+          "source": "health_conditions",
+          "section": "health_conditions",
+          "distance_score": 0.9322,
+          "relevant": true,
+          "source_match": true,
+          "snippet": "Alkaline, helps neutralize stomach acid - **Bread (without butter/margarine)**: Absorbs excess acid  ### Nigerian Foods to AVOID with Ulcers - **Spicy..."
+        }
+      ]
+    },
+    {
+      "id": "Q10",
+      "question": "What are the best Nigerian foods high in iron for anemia?",
+      "topic": "Iron deficiency — Nigerian sources",
+      "expected_source": "micronutrient_guide",
+      "relevant_count": 3,
+      "total_chunks": 3,
+      "relevance_pct": 100.0,
+      "chunks": [
+        {
+          "rank": 1,
+          "source": "nigerian_dietary_guidelines",
+          "section": "nigerian_dietary_guidelines",
+          "distance_score": 0.5072,
+          "relevant": true,
+          "source_match": false,
+          "snippet": "iron. Consuming these with Vitamin C-rich foods like tomatoes and peppers enhances iron absorption.  ### Vitamin A Deficiency Vitamin A deficiency is ..."
+        },
+        {
+          "rank": 2,
+          "source": "micronutrient_guide",
+          "section": "Micronutrient Guide: Nigerian Foods",
+          "distance_score": 0.5591,
+          "relevant": true,
+          "source_match": true,
+          "snippet": "# Micronutrient Guide: Nigerian Foods  ## Iron  ### Why Iron Matters Iron deficiency is the most common nutritional deficiency in Nigeria, especially ..."
+        },
+        {
+          "rank": 3,
+          "source": "nigerian_dietary_guidelines",
+          "section": "Nigerian-Specific Nutritional Challenges",
+          "distance_score": 0.5814,
+          "relevant": true,
+          "source_match": false,
+          "snippet": "cium: 1,000mg - Vitamin A: 700mcg RAE - Vitamin C: 75mg  ## Nigerian-Specific Nutritional Challenges  ### Iron Deficiency Iron deficiency anemia affec..."
+        }
+      ]
+    },
+    {
+      "id": "Q11",
+      "question": "How can I get enough calcium without drinking milk in Nigeria?",
+      "topic": "Calcium — non-dairy Nigerian sources",
+      "expected_source": "micronutrient_guide",
+      "relevant_count": 3,
+      "total_chunks": 3,
+      "relevance_pct": 100.0,
+      "chunks": [
+        {
+          "rank": 1,
+          "source": "micronutrient_guide",
+          "section": "Calcium",
+          "distance_score": 0.8113,
+          "relevant": true,
+          "source_match": true,
+          "snippet": "ted foods like Ogi (Pap) have better iron bioavailability than unfermented versions  ---  ## Calcium  ### Why Calcium Matters Calcium is critical for ..."
+        },
+        {
+          "rank": 2,
+          "source": "micronutrient_guide",
+          "section": "micronutrient_guide",
+          "distance_score": 0.9049,
+          "relevant": true,
+          "source_match": true,
+          "snippet": "Calcium Requirements - Adults: 1,000mg/day - Pregnant women: 1,000mg/day - Adolescents: 1,300mg/day  ### Best Nigerian Calcium Sources | Food | Calciu..."
+        },
+        {
+          "rank": 3,
+          "source": "micronutrient_guide",
+          "section": "Vitamin A",
+          "distance_score": 0.9569,
+          "relevant": true,
+          "source_match": true,
+          "snippet": "n some vegetables can reduce calcium absorption — cooking reduces oxalate content  ---  ## Vitamin A  ### Why Vitamin A Matters Vitamin A is essential..."
+        }
+      ]
+    },
+    {
+      "id": "Q12",
+      "question": "Which Nigerian foods are highest in Vitamin A?",
+      "topic": "Vitamin A — Nigerian sources",
+      "expected_source": "micronutrient_guide",
+      "relevant_count": 2,
+      "total_chunks": 3,
+      "relevance_pct": 66.7,
+      "chunks": [
+        {
+          "rank": 1,
+          "source": "nigerian_dietary_guidelines",
+          "section": "nigerian_dietary_guidelines",
+          "distance_score": 0.5622,
+          "relevant": true,
+          "source_match": false,
+          "snippet": "iron. Consuming these with Vitamin C-rich foods like tomatoes and peppers enhances iron absorption.  ### Vitamin A Deficiency Vitamin A deficiency is ..."
+        },
+        {
+          "rank": 2,
+          "source": "micronutrient_guide",
+          "section": "Sodium",
+          "distance_score": 0.6105,
+          "relevant": false,
+          "source_match": true,
+          "snippet": "Present in most Nigerian stews | | Oranges/Citrus | 70mg per fruit | The classic Vitamin C source |  ### Key Insight: Nigerian Cooking Preserves Vitam..."
+        },
+        {
+          "rank": 3,
+          "source": "micronutrient_guide",
+          "section": "micronutrient_guide",
+          "distance_score": 0.6853,
+          "relevant": true,
+          "source_match": true,
+          "snippet": "ment.  ### Daily Vitamin C Requirements - Men: 90mg/day - Women: 75mg/day - Pregnant women: 85mg/day  ### Best Nigerian Vitamin C Sources | Food | Vit..."
+        }
+      ]
+    },
+    {
+      "id": "Q13",
+      "question": "How do I calculate my daily calorie needs using BMR?",
+      "topic": "Calorie computation — BMR formula",
+      "expected_source": "nigerian_dietary_guidelines",
+      "relevant_count": 3,
+      "total_chunks": 3,
+      "relevance_pct": 100.0,
+      "chunks": [
+        {
+          "rank": 1,
+          "source": "nigerian_dietary_guidelines",
+          "section": "Calorie Computation: Mifflin-St Jeor Equation",
+          "distance_score": 0.7882,
+          "relevant": true,
+          "source_match": true,
+          "snippet": "HO recommends less than 2,000mg of sodium per day.  ## Calorie Computation: Mifflin-St Jeor Equation  For calculating Basal Metabolic Rate (BMR), the ..."
+        },
+        {
+          "rank": 2,
+          "source": "nigerian_dietary_guidelines",
+          "section": "Weight Management Guidelines",
+          "distance_score": 0.8556,
+          "relevant": true,
+          "source_match": true,
+          "snippet": "in years) + 5 - Female BMR = (10 × weight in kg) + (6.25 × height in cm) - (5 × age in years) - 161  Activity multipliers: - Sedentary (desk job, stud..."
+        },
+        {
+          "rank": 3,
+          "source": "nigerian_dietary_guidelines",
+          "section": "Weight Management Guidelines",
+          "distance_score": 0.8998,
+          "relevant": true,
+          "source_match": true,
+          "snippet": "× 1.55 - Very active (intense exercise 6-7 days/week): BMR × 1.725  ## Weight Management Guidelines  ### Weight Loss A safe calorie deficit is 500 kca..."
+        }
+      ]
+    },
+    {
+      "id": "Q14",
+      "question": "What is a safe calorie deficit for weight loss in Nigeria?",
+      "topic": "Weight loss — safe calorie deficit",
+      "expected_source": "nigerian_dietary_guidelines",
+      "relevant_count": 3,
+      "total_chunks": 3,
+      "relevance_pct": 100.0,
+      "chunks": [
+        {
+          "rank": 1,
+          "source": "nigerian_dietary_guidelines",
+          "section": "nigerian_dietary_guidelines",
+          "distance_score": 0.6909,
+          "relevant": true,
+          "source_match": true,
+          "snippet": "week. Never go below 1,200 kcal/day for women or 1,500 kcal/day for men without medical supervision.  Nigerian-friendly weight loss strategies: - Choo..."
+        },
+        {
+          "rank": 2,
+          "source": "nigerian_dietary_guidelines",
+          "section": "nigerian_dietary_guidelines",
+          "distance_score": 0.6988,
+          "relevant": true,
+          "source_match": true,
+          "snippet": "vity level, and health status. The Federal Ministry of Health recommends the following distribution:  - **Carbohydrates**: 55-65% of total calories. N..."
+        },
+        {
+          "rank": 3,
+          "source": "nigerian_dietary_guidelines",
+          "section": "Nigerian Dietary Guidelines",
+          "distance_score": 0.7035,
+          "relevant": true,
+          "source_match": true,
+          "snippet": "# Nigerian Dietary Guidelines  ## Daily Calorie Requirements (Nigerian Context)  The average Nigerian adult requires between 2,000 and 2,500 kilocalor..."
+        }
+      ]
+    },
+    {
+      "id": "Q15",
+      "question": "What soup pairs best with pounded yam in Yoruba cuisine?",
+      "topic": "Food pairings — pounded yam",
+      "expected_source": "food_pairings_and_culture",
+      "relevant_count": 3,
+      "total_chunks": 3,
+      "relevance_pct": 100.0,
+      "chunks": [
+        {
+          "rank": 1,
+          "source": "food_pairings_and_culture",
+          "section": "food_pairings_and_culture",
+          "distance_score": 0.7199,
+          "relevant": true,
+          "source_match": true,
+          "snippet": "low without soup is incomplete and culturally inappropriate. The following pairings are traditional:  **Yoruba Pairings (Southwest Nigeria)**: - Amala..."
+        },
+        {
+          "rank": 2,
+          "source": "food_pairings_and_culture",
+          "section": "food_pairings_and_culture",
+          "distance_score": 0.7206,
+          "relevant": true,
+          "source_match": true,
+          "snippet": "oth yam) - Fried Yam AND Yam Pottage (both yam) - Fried Plantain AND Boiled Plantain (both plantain)  ### Texture/Heaviness Conflicts - Two oily fried..."
+        },
+        {
+          "rank": 3,
+          "source": "food_pairings_and_culture",
+          "section": "Regional Cuisine Characteristics",
+          "distance_score": 0.7557,
+          "relevant": true,
+          "source_match": true,
+          "snippet": "n soups in some Yoruba communities - Mixing bean dishes with rice dishes in the same meal (uncommon)  ## Regional Cuisine Characteristics..."
+        }
+      ]
+    }
+  ]
+}
