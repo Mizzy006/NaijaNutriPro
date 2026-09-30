@@ -76,8 +76,8 @@ class NumpyEncoder(json.JSONEncoder):
 
 
 # Defining Models (Using Groq's Free Tier Models)
-TEXT_MODEL = "qwen/qwen3.6-27b"
-VISION_MODEL = "qwen/qwen3.6-27b"
+TEXT_MODEL = "qwen/qwen3.8-27b"
+VISION_MODEL = "qwen/qwen3.8-27b"
 
 # Data path for validation
 CSV_PATH = Path(__file__).parent / "data" / "nigerian_food_nutrition.csv"
