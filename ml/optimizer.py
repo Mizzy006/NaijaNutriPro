@@ -21,9 +21,13 @@ The optimization problem:
 
 import pandas as pd
 import numpy as np
-from pulp import (
-    LpProblem, LpMaximize, LpVariable, lpSum, LpStatus, PULP_CBC_CMD
-)
+try:
+    from pulp import (
+        LpProblem, LpMaximize, LpVariable, lpSum, LpStatus, PULP_CBC_CMD
+    )
+    PULP_AVAILABLE = True
+except ImportError:
+    PULP_AVAILABLE = False
 
 
 # ============================================================
@@ -182,6 +186,12 @@ class MealOptimizer:
         n = len(candidates)
         pair_cats = candidates['Pair_Category'].values
 
+        # --- FALLBACK: greedy selection when PuLP is unavailable ---
+        if not PULP_AVAILABLE:
+            return self._greedy_fallback(
+                candidates, target_calories, budget, meal_type, calorie_tolerance
+            )
+
         # --- BUILD LP ---
         prob = LpProblem(f"MealOptimizer_{meal_type}", LpMaximize)
         x = [LpVariable(f"x_{i}", cat='Binary') for i in range(n)]
@@ -305,6 +315,103 @@ class MealOptimizer:
                     'Category': row['Category'],
                     'ml_score': round(float(row['ml_score']), 3),
                 })
+
+        return selected if selected else None
+
+    # ------------------------------------------------------------------
+    # GREEDY FALLBACK (used when PuLP is not installed)
+    # ------------------------------------------------------------------
+    def _greedy_fallback(
+        self,
+        candidates: pd.DataFrame,
+        target_calories: float,
+        budget: float,
+        meal_type: str,
+        calorie_tolerance: float,
+    ) -> list[dict] | None:
+        """
+        Simple greedy selection respecting budget, calories, and
+        pair-category compatibility. Not optimal, but functional.
+        """
+        max_items = 3 if meal_type in ('Lunch', 'Dinner') else 2
+        sorted_cands = candidates.sort_values('ml_score', ascending=False)
+
+        selected = []
+        total_cal = 0.0
+        total_cost = 0.0
+        selected_cats = set()
+        selected_names = set()
+        selected_base_groups = set()  # track which base groups are used
+
+        for _, row in sorted_cands.iterrows():
+            if len(selected) >= max_items:
+                break
+
+            name = row['Name']
+            cal = row['Calories_kcal']
+            price = row['Price_Avg_Naira']
+            pair_cat = row['Pair_Category']
+
+            # Budget check
+            if total_cost + price > budget:
+                continue
+
+            # Calorie check
+            if total_cal + cal > target_calories + calorie_tolerance:
+                continue
+
+            # Pair-category compatibility
+            if selected_cats:
+                compatible = True
+                for sc in selected_cats:
+                    compat_sc = COMPATIBLE_PAIRS.get(sc, set())
+                    compat_pc = COMPATIBLE_PAIRS.get(pair_cat, set())
+                    if pair_cat not in compat_sc and sc not in compat_pc:
+                        compatible = False
+                        break
+                if not compatible:
+                    continue
+
+            # At most 1 per pair category
+            if pair_cat in selected_cats:
+                continue
+
+            # Same-base-group exclusion
+            in_used_group = False
+            for gidx, group in enumerate(SAME_BASE_GROUPS):
+                if name in group and gidx in selected_base_groups:
+                    in_used_group = True
+                    break
+            if in_used_group:
+                continue
+
+            # Accept this item
+            selected.append({
+                'Name': name,
+                'Calories': int(cal),
+                'Price': int(price),
+                'Category': row['Category'],
+                'ml_score': round(float(row['ml_score']), 3),
+            })
+            total_cal += cal
+            total_cost += price
+            selected_cats.add(pair_cat)
+            selected_names.add(name)
+            # Mark base groups
+            for gidx, group in enumerate(SAME_BASE_GROUPS):
+                if name in group:
+                    selected_base_groups.add(gidx)
+
+        # Must have at least 1 main food
+        if selected:
+            has_main = any(
+                candidates.loc[candidates['Name'] == s['Name'], 'Pair_Category'].iloc[0]
+                in MAIN_PAIR_CATS
+                for s in selected
+                if not candidates.loc[candidates['Name'] == s['Name']].empty
+            )
+            if not has_main:
+                return None
 
         return selected if selected else None
 
