@@ -288,7 +288,7 @@ def explain_meal_plan(user_profile, plan_data, day, style="Standard"):
                 {"role": "user", "content": prompt}
             ],
             temperature=0.8,
-            max_tokens=500,
+            max_tokens=450,
             reasoning_format="hidden",
         )
         return _strip_think_tags(response.choices[0].message.content)
@@ -357,7 +357,7 @@ def process_chat_query(user_prompt, plan_data, chat_history, style="Standard"):
             messages=messages,
             temperature=0.3,  # Low temp so the JSON is strictly formatted
             response_format={"type": "json_object"},  # Force Groq to return pure JSON
-            max_tokens=2000,
+            max_tokens=900,
             reasoning_format="hidden",
         )
         return _strip_think_tags(response.choices[0].message.content)
@@ -487,7 +487,7 @@ def process_multimodal_query(user_prompt, image_file, budget, metrics, chat_hist
                 model=TEXT_MODEL,
                 messages=messages,
                 temperature=0.5,
-                max_tokens=1024,
+                max_tokens=900,
                 reasoning_format="hidden",
             )
             return _strip_think_tags(response.choices[0].message.content)
@@ -558,7 +558,7 @@ def process_multimodal_query(user_prompt, image_file, budget, metrics, chat_hist
                 model=TEXT_MODEL,
                 messages=messages,
                 temperature=0.5,
-                max_tokens=1024,
+                max_tokens=900,
                 reasoning_format="hidden",
             )
             return _strip_think_tags(response.choices[0].message.content)
